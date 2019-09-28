@@ -1,0 +1,20 @@
+[
+  {
+    "name": "bedroom",
+    "temperature": 23,
+    "curtainsStatus": "closed",
+    "lightsStatus": "on"
+  },
+  {
+    "name": "kitchen",
+    "temperature": 18,
+    "curtainsStatus": "open",
+    "lightsStatus": "off"
+  },
+  {
+    "name": "bathroom1",
+    "temperature": 23,
+    "curtainsStatus": "closed",
+    "lightsStatus": "on"
+  }
+]

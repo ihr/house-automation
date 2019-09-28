@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>House Automation</title>
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- JQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Split the screen in 2 columns -->
+<div class="mdl-grid">
+    <!-- One for the "Control Panel" -->
+    <div class="mdl-cell mdl-cell--top">
+        <span class="mdl-layout-title">Control Panel</span>
+        <div id="control-plane" >
+            <div id="rooms" class="mdl-list"></div>
+        </div>
+    </div>
+    <!-- One for the "Status Panel" -->
+    <div class="mdl-cell mdl-cell--top">
+        <span class="mdl-layout-title">Status Panel</span>
+        <div id="status-plane" >
+            <div id="rooms-status" class="mdl-list"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Model -->
+<script src="js/model/model.js"></script>
+
+<!-- View -->
+<script src="js/view/controlView.js"></script>
+<script src="js/view/statusView.js"></script>
+
+<!-- Controller -->
+<script src="js/controller/controller.js"></script>
+
+<!-- Service -->
+<script src="js/service/mock_api.js"></script>
+
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
