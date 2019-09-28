@@ -19,13 +19,15 @@
 ├── server.js                           - (Optional) This file is only needed if you need to run this app from localhost (see below)
 └── static                              - Holds static templates
     ├── control_view_template.html      - One for the Control view
-    └── status_view_template.html       - One for the Status view
-``    
+    └── status_view_template.html       - One for the Status view   
+```
+
 # How to run this app from localhost
 
 NOTE: Be aware that while trying with UI, there will be a delay of roughly 400ms between a control action in the Control View
 and the update on the Status view, that is to simulate the network latency to a certain extend
- 
+
+``` 
 1. npm install connect serve-static
 // Tested with npm v6.9.0
 
@@ -36,9 +38,11 @@ and the update on the Status view, that is to simulate the network latency to a 
 // Tested on
 - Chrome Version [ 76.0.3809.132 (Official Build) (64-bit) ]
 - Firefox [ 68.0.2 (64-bit),  69.0 (64-bit), 69.0.1 (64-bit) ]
+```
 
 # How to develop own components that react to events :
 
+```
 Hint: follow the 'Room lock example' comments in the code
 
 Assume we are about to add automatic locks. With these we can automatically lock the rooms in the house or unlock them
@@ -66,6 +70,7 @@ change functionality
 5. Update the data -> model mapping
 5.1 In main.js, update the creation of the Model, e.g., new Model(room.name, room.curtainsStatus, room.lightsStatus, room.temperature, room.lockStatus)); 
 5.2 In backend/data.json, add the necessary properties, e.g. "lockStatus": "locked" or "lockStatus": "unlocked"
+```
 
 # Things to be improved:
 
@@ -83,9 +88,9 @@ UI/UX-wise:
 
 # Credits:
 
-My work was influenced by the following resources:
+This work was influenced by the following resources:
 
-1. https://github.com/ThomasKnobloch/smart-house/ - I like the MDL HTML/CSS design for the Control panel, therefore I opted to reuse it. The two files can be found in the static/ folder, although they are not 1-to-1
+1. https://github.com/ThomasKnobloch/smart-house/ - I liked the MDL HTML/CSS design for the Control panel, therefore I opted to reuse parts of it. These can be found in the two files located in the the `static/` folder, although they are not 1-to-1
 
 2. https://medium.com/@ToddZebert/a-walk-through-of-a-simple-javascript-mvc-implementation-c188a69138dc
 
