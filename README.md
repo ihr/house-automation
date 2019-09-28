@@ -1,4 +1,5 @@
 # Overall file structure
+```
 .
 ├── README.md                           - You are reading this file
 ├── backend                             - Simulating backend data
@@ -19,7 +20,7 @@
 └── static                              - Holds static templates
     ├── control_view_template.html      - One for the Control view
     └── status_view_template.html       - One for the Status view
-    
+``    
 # How to run this app from localhost
 
 NOTE: Be aware that while trying with UI, there will be a delay of roughly 400ms between a control action in the Control View
