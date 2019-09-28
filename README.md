@@ -24,7 +24,7 @@
 
 # How to run this app from localhost
 
-NOTE: Be aware that while trying with UI, there will be a delay of roughly 400ms between a control action in the Control View
+NOTE: Be aware that while playing with the UI, there will be a (configurable) delay of roughly 400ms between a control action in the Control View
 and the update on the Status view, that is to simulate the network latency to a certain extend
 
 ``` 
@@ -90,7 +90,7 @@ UI/UX-wise:
 
 This work was influenced by the following resources:
 
-1. https://github.com/ThomasKnobloch/smart-house/ - I liked the MDL HTML/CSS design for the Control panel, therefore I opted to reuse parts of it. These can be found in the two files located in the the `static/` folder, although they are not 1-to-1
+1. https://github.com/ThomasKnobloch/smart-house/ - I liked the MDL HTML/CSS design for the Control panel, therefore I opted to reuse parts of it. These can be found in the two files located in the the `static/ folder, although they are not 1-to-1
 
 2. https://medium.com/@ToddZebert/a-walk-through-of-a-simple-javascript-mvc-implementation-c188a69138dc
 
